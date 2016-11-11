@@ -1,9 +1,14 @@
 mkdir bin
 set JAVAC="%JAVA_HOME%\bin\javac"
-set CLASSPATH=.\;..\Examples;..\..\Libs\upa.jar;..\..\Libs\upaValueAdd.jar;..\..\..\..\Elektron-SDK-BinaryPack\Java\Eta\Libs\upa.jar
+set CLASSPATH=.\;..\Shared;..\Examples;..\..\Libs\upa.jar;..\..\Libs\upaValueAdd.jar;
 
-%JAVAC% -d bin ..\Examples\com\thomsonreuters\upa\examples\common\*.java 
-%JAVAC% -d bin ..\Examples\com\thomsonreuters\upa\examples\rdm\marketprice\*.java
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\provider\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\rdm\marketbyorder\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\rdm\marketbyprice\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\rdm\marketprice\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\rdm\symbollist\*.java 
+%JAVAC% -d bin ..\Shared\com\thomsonreuters\upa\shared\rdm\yieldcurve\*.java 
 %JAVAC% -d bin com\thomsonreuters\upa\training\consumer\*.java 
 %JAVAC% -d bin com\thomsonreuters\upa\training\niprovider\*.java
 %JAVAC% -d bin com\thomsonreuters\upa\training\provider\*.java

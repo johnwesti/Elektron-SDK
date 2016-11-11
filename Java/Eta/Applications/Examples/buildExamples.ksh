@@ -3,8 +3,10 @@
 mkdir -p bin
 JAVAC="$JAVA_HOME/bin/javac"
 export JAVAC
-CLASSPATH=./:../../Libs/upa.jar:../../Libs/jdacsUpalib.jar:../../Libs/upaValueAdd.jar:../../Libs/upaValueAddCache.jar:../../Libs/ansipage.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/upa.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/upaValueAddCache.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/jdacsUpalib.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/ansipage.jar
+CLASSPATH=./:../Shared:../../Libs/upa.jar:../../Libs/jdacsUpalib.jar:../../Libs/upaValueAdd.jar:../../Libs/upaValueAddCache.jar:../../Libs/ansipage.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/upa.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/upaValueAddCache.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/jdacsUpalib.jar:../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/ansipage.jar
 export CLASSPATH
+SHARED_PATH=../Shared/com/thomsonreuters/upa/shared
+export SHARED_PATH
 EXAMPLE_PATH=com/thomsonreuters/upa/examples
 export EXAMPLE_PATH
 VAEXAMPLE_PATH=com/thomsonreuters/upa/valueadd/examples
@@ -12,6 +14,13 @@ export VAEXAMPLE_PATH
 
 rm -f `find . -name *.class`
 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/provider/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/rdm/marketbyorder/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/rdm/marketbyprice/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/rdm/marketprice/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/rdm/symbollist/*.java 
+$JAVAC -version -target 1.7 -source 1.7 -d bin $SHARED_PATH/rdm/yieldcurve/*.java 
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/codec/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/common/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/consumer/*.java
@@ -19,7 +28,6 @@ $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/niprovider/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/provider/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/genericcons/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/genericprov/*.java
-$JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/rdm/marketprice/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/newsviewer/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/edfexamples/common/*.java
 $JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/edfexamples/edfconsumer/*.java
@@ -36,7 +44,7 @@ else
 	if [ -f ../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/ansipage.jar ]; then
 		$JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/ansipage/*.java
 	else
-		echo "Warning: ansipage.jar not found; not building AnsiPageExample."
+	echo "Warning: ansipage.jar not found; not building AnsiPageExample."
 	fi
 fi
 
@@ -47,7 +55,7 @@ else
 	if [ -f ../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs/jdacsUpalib.jar ]; then
 		$JAVAC -version -target 1.7 -source 1.7 -d bin $EXAMPLE_PATH/authlock/*.java
 	else
-		echo "Warning: jdacsUpalib.jar not found; not building AuthLockExample."
+	echo "Warning: jdacsUpalib.jar not found; not building AuthLockExample."
 	fi
 fi
 

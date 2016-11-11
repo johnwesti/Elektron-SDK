@@ -34,6 +34,7 @@
 		<echo message="Building the PerfTools" />
         <javac debug="false" debuglevel="${debuglevel}" destdir="${bin.dir}" source="${source}" target="${target}" includeantruntime="false">
         	<src path="."/>
+			<src path="../Shared"/>
             <classpath refid="perfTools.classpath"/>
         </javac>
     </target>

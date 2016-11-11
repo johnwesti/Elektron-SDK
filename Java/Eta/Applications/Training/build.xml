@@ -6,12 +6,10 @@
 
 	<property name="bin.dir" value="bin"/>
 	<property name="libs.dir" value="../../Libs"/>	
-	<property name="submodule.dir" value="../../../../Elektron-SDK-BinaryPack/Java/Eta/Libs"/>
 	
 	<path id="examples.classpath">
 		<pathelement location="${libs.dir}/upa.jar"/>
 		<pathelement location="${libs.dir}/upaValueAdd.jar"/>
-		<pathelement location="${submodule.dir}/upa.jar"/>
 	</path>
 
 	<target name="init">
@@ -32,8 +30,7 @@
 		<echo message="Building the training examples" />
         <javac debug="false" debuglevel="${debuglevel}" destdir="${bin.dir}" source="${source}" target="${target}" includeantruntime="false">
         	<src path="."/>
-			<src path="../Examples/com/thomsonreuters/upa/examples/common"/>
-			<src path="../Examples/com/thomsonreuters/upa/examples/rdm"/>
+			<src path="../Shared"/>
             <classpath refid="examples.classpath"/>
         </javac>
     </target>
