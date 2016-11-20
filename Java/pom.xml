@@ -37,6 +37,16 @@
     <dependencies>
         <dependency>
             <groupId>com.thomsonreuters</groupId>
+            <artifactId>thomsonreuters-upa-valueadd</artifactId>
+            <version>${thomsonreuters.upa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thomsonreuters</groupId>
+            <artifactId>thomsonreuters-upa-valueadd-cache</artifactId>
+            <version>${thomsonreuters.upa.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thomsonreuters</groupId>
             <artifactId>thomsonreuters-upa</artifactId>
             <version>${thomsonreuters.upa.version}</version>
         </dependency>
