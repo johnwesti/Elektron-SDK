@@ -76,3 +76,9 @@ $RECYCLE.BIN/
 
 #Mr Developer
 .mr.developer.cfg
+
+# Idea
+*.iml
+
+# Maven
+*/target

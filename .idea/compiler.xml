@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="thomsonreuters-elektron-message-api" />
+        <module name="thomsonreuters-elektron-message-api-examples" />
+        <module name="thomsonreuters-elektron-message-performance-tools" />
+        <module name="thomsonreuters-elektron-transport-api" />
+        <module name="thomsonreuters-elektron-transport-api-examples" />
+        <module name="thomsonreuters-elektron-transport-api-training" />
+        <module name="thomsonreuters-elektron-transport-performance-tools" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="thomsonreuters-elektron" target="1.7" />
+      <module name="thomsonreuters-elektron-message" target="1.7" />
+      <module name="thomsonreuters-elektron-message-api" target="1.7" />
+      <module name="thomsonreuters-elektron-message-api-examples" target="1.7" />
+      <module name="thomsonreuters-elektron-message-performance-tools" target="1.7" />
+      <module name="thomsonreuters-elektron-transport" target="1.7" />
+      <module name="thomsonreuters-elektron-transport-api" target="1.7" />
+      <module name="thomsonreuters-elektron-transport-api-examples" target="1.7" />
+      <module name="thomsonreuters-elektron-transport-api-training" target="1.7" />
+      <module name="thomsonreuters-elektron-transport-performance-tools" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/message/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/message/api-examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/message/performance-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/transport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/transport/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/transport/api-examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/transport/api-training" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Java/transport/performance-tools" charset="UTF-8" />
+  </component>
+</project>

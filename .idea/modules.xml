@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/thomsonreuters-elektron.iml" filepath="$PROJECT_DIR$/Java/thomsonreuters-elektron.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/message/thomsonreuters-elektron-message.iml" filepath="$PROJECT_DIR$/Java/message/thomsonreuters-elektron-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/message/api/thomsonreuters-elektron-message-api.iml" filepath="$PROJECT_DIR$/Java/message/api/thomsonreuters-elektron-message-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/message/api-examples/thomsonreuters-elektron-message-api-examples.iml" filepath="$PROJECT_DIR$/Java/message/api-examples/thomsonreuters-elektron-message-api-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/message/performance-tools/thomsonreuters-elektron-message-performance-tools.iml" filepath="$PROJECT_DIR$/Java/message/performance-tools/thomsonreuters-elektron-message-performance-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/transport/thomsonreuters-elektron-transport.iml" filepath="$PROJECT_DIR$/Java/transport/thomsonreuters-elektron-transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/transport/api/thomsonreuters-elektron-transport-api.iml" filepath="$PROJECT_DIR$/Java/transport/api/thomsonreuters-elektron-transport-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/transport/api-examples/thomsonreuters-elektron-transport-api-examples.iml" filepath="$PROJECT_DIR$/Java/transport/api-examples/thomsonreuters-elektron-transport-api-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/transport/api-training/thomsonreuters-elektron-transport-api-training.iml" filepath="$PROJECT_DIR$/Java/transport/api-training/thomsonreuters-elektron-transport-api-training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/transport/performance-tools/thomsonreuters-elektron-transport-performance-tools.iml" filepath="$PROJECT_DIR$/Java/transport/performance-tools/thomsonreuters-elektron-transport-performance-tools.iml" />
+    </modules>
+  </component>
+</project>
