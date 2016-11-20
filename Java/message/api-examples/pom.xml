@@ -26,5 +26,6 @@
 	
 	<build>
 		<sourceDirectory>../../Ema/Src/examples/java</sourceDirectory>
+		<directory>target</directory>
 	</build>
 </project>

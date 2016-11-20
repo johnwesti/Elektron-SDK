@@ -26,5 +26,6 @@
 	
 	<build>
 		<sourceDirectory>../../Eta/Applications/Training</sourceDirectory>
+		<directory>target</directory>
 	</build>
 </project>

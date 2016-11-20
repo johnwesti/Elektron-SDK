@@ -17,6 +17,7 @@
 	</parent>
 
 	<build>
-		<sourceDirectory>../../Eta/Source</sourceDirectory>		
+		<sourceDirectory>../../Eta/Source</sourceDirectory>
+		<directory>target</directory>
     </build>
 </project>

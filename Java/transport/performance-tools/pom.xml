@@ -31,5 +31,6 @@
 	
 	<build>
 		<sourceDirectory>../../Eta/Applications/PerfTools</sourceDirectory>
+        <directory>target</directory>
     </build>
 </project>
