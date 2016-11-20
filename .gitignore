@@ -81,4 +81,5 @@ $RECYCLE.BIN/
 *.iml
 
 # Maven
-*/target
+**/target
+*.class
