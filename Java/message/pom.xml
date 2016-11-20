@@ -71,4 +71,12 @@
 		</dependency>
 	</dependencies>
 
+	<build>
+		<resources>
+			<resource>
+				<directory>../../Ema/etc</directory>
+			</resource>
+		</resources>
+	</build>
+
 </project>

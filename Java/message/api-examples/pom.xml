@@ -27,5 +27,14 @@
 	<build>
 		<sourceDirectory>../../Ema/Src/examples/java</sourceDirectory>
 		<directory>target</directory>
+		<resources>
+			<resource>
+				<directory>../../Ema/Src/examples/java</directory>
+				<includes>
+					<include>EmaConfig.xml</include>
+				</includes>
+			</resource>
+		</resources>
 	</build>
+
 </project>
